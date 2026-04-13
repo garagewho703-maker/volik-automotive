@@ -43,7 +43,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-white/60 mb-12 max-w-2xl mx-auto font-light leading-relaxed"
           >
-            VOLIK Automotive is a premier global distributor of high-performance Paint Protection Films, supplying elite protection solutions to professionals worldwide.
+            VOLIK AUTOMOTIVE is a premier global distributor of high-performance Paint Protection Films, supplying elite protection solutions to professionals worldwide.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}

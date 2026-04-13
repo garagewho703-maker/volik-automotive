@@ -51,7 +51,7 @@ export default function Contact() {
                       <div className="p-3 bg-surface rounded-sm text-gold"><Mail size={20} /></div>
                       <div>
                         <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 opacity-40">Email</h4>
-                        <p className="text-sm font-medium">info@volik.com</p>
+                        <p className="text-sm font-medium">info@VOLIK.com</p>
                       </div>
                     </div>
                   </div>

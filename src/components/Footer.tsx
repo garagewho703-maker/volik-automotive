@@ -36,7 +36,7 @@ export default function Footer() {
           <ul className="space-y-4 text-sm text-white/60">
             <li className="flex items-center space-x-3">
               <Mail size={18} className="flex-shrink-0" />
-              <span>info@volik.com</span>
+              <span>info@VOLIK.com</span>
             </li>
           </ul>
         </div>
