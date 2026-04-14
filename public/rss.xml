@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>VOLIK AUTOMOTIVE</title>
+    <link>https://volikautomotive.com</link>
+    <description>Premium Paint Protection Films and advanced automotive care solutions.</description>
+    <language>ko-kr</language>
+    <item>
+      <title>VOLIK AUTOMOTIVE - Premium PPF Specialist</title>
+      <link>https://volikautomotive.com</link>
+      <description>The Ultimate Shield for Your Asset. Global distributor of high-performance Paint Protection Films.</description>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://volikautomotive.com</guid>
+    </item>
+    <item>
+      <title>VOLIK Technology - Graphene &amp; Self-Healing</title>
+      <link>https://volikautomotive.com/technology</link>
+      <description>Explore our advanced Graphene Coating and Heat-Activated Self-Healing technology.</description>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://volikautomotive.com/technology</guid>
+    </item>
+    <item>
+      <title>VOLIK Products - PPF Series</title>
+      <link>https://volikautomotive.com/products</link>
+      <description>Discover the VOLIK series: V-SHIELD, V-GLOSS, and more premium protection solutions.</description>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://volikautomotive.com/products</guid>
+    </item>
+  </channel>
+</rss>
