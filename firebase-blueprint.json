@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "warranty": {
+      "title": "Warranty Record",
+      "description": "Details of a product warranty for a specific vehicle.",
+      "type": "object",
+      "properties": {
+        "customerName": { "type": "string" },
+        "customerEmail": { "type": "string", "format": "email" },
+        "vehicleVin": { "type": "string" },
+        "vehicleModel": { "type": "string" },
+        "installationDate": { "type": "string", "format": "date-time" },
+        "expiryDate": { "type": "string", "format": "date-time" },
+        "productName": { "type": "string" },
+        "installerName": { "type": "string" },
+        "status": { "type": "string", "enum": ["Active", "Expired", "Void"] }
+      },
+      "required": ["customerName", "vehicleVin", "installationDate", "expiryDate", "productName", "status"]
+    }
+  },
+  "firestore": {
+    "/warranties/{warrantyId}": {
+      "schema": "warranty",
+      "description": "Collection of all warranty records."
+    }
+  }
+}

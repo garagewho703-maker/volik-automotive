@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 0. Default Deny Catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isSignedIn() { return request.auth != null; }
+    function isValidId(id) { return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); }
+    
+    // Warranty Validation Blueprint (for future writes)
+    function isValidWarranty(data) {
+      return data.keys().hasAll(['customerName', 'vehicleVin', 'installationDate', 'expiryDate', 'productName', 'status'])
+        && data.keys().size() <= 15
+        && data.customerName is string && data.customerName.size() <= 100
+        && data.vehicleVin is string && data.vehicleVin.size() <= 17
+        && data.productName is string && data.productName.size() <= 100
+        && data.status in ['Active', 'Expired', 'Void'];
+    }
+
+    match /warranties/{warrantyId} {
+      // 3. Path Variable Hardening
+      // 8. Secure List Queries: allow get but not list
+      allow get: if isValidId(warrantyId);
+      allow list: if false;
+
+      // Writes are restricted (could be admin in future)
+      allow create, update, delete: if false;
+    }
+  }
+}

@@ -86,8 +86,16 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile Toggle & Desktop Spacer */}
-        <div className="flex-1 flex justify-end items-center">
+        {/* Right Actions & Mobile Toggle */}
+        <div className="flex-1 flex justify-end items-center gap-6">
+          <Link 
+            to="/warranty"
+            className="hidden md:flex items-center gap-2 px-5 py-2.5 rounded-full bg-gold/10 border border-gold/30 text-gold text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-gold hover:text-black transition-all duration-300"
+          >
+            <span className="w-1.5 h-1.5 bg-gold rounded-full animate-pulse group-hover:bg-black" />
+            Warranty Lookup
+          </Link>
+
           <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X /> : <Menu />}
           </button>
@@ -129,6 +137,15 @@ export default function Navbar() {
                   )}
                 </div>
               ))}
+              <div className="pt-4 border-t border-white/5">
+                <Link
+                  to="/warranty"
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center justify-center gap-2 w-full py-4 rounded-xl bg-gold text-black font-bold text-xs uppercase tracking-widest"
+                >
+                  Warranty Lookup
+                </Link>
+              </div>
             </div>
           </motion.div>
         )}
