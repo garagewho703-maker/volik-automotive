@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
-  <channel>
-    <title>VOLIK AUTOMOTIVE</title>
-    <link>https://volikautomotive.com</link>
-    <description>Premium Paint Protection Films and advanced automotive care solutions.</description>
-    <language>ko-kr</language>
-    <item>
-      <title>VOLIK AUTOMOTIVE - Premium PPF Specialist</title>
-      <link>https://volikautomotive.com</link>
-      <description>The Ultimate Shield for Your Asset. Global distributor of high-performance Paint Protection Films.</description>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://volikautomotive.com</guid>
-    </item>
-    <item>
-      <title>VOLIK Technology - Graphene &amp; Self-Healing</title>
-      <link>https://volikautomotive.com/technology</link>
-      <description>Explore our advanced Graphene Coating and Heat-Activated Self-Healing technology.</description>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://volikautomotive.com/technology</guid>
-    </item>
-    <item>
-      <title>VOLIK Products - PPF Series</title>
-      <link>https://volikautomotive.com/products</link>
-      <description>Discover the VOLIK series: V-SHIELD, V-GLOSS, and more premium protection solutions.</description>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://volikautomotive.com/products</guid>
-    </item>
-  </channel>
+<channel>
+<title>VOLIK AUTOMOTIVE</title>
+<link>https://volik-automotive.com/</link>
+<description>Premium Paint Protection Films and advanced automotive care solutions.</description>
+<language>ko-kr</language>
+<pubDate>Mon, 20 Apr 2026 00:00:00 +0900</pubDate>
+<lastBuildDate>Mon, 20 Apr 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>볼릭 오토모티브 공식 홈페이지</title>
+<link>https://volik-automotive.com/</link>
+<description>프리미엄 PPF 및 윈도우 필름 전문 볼릭 오토모티브 공식 홈페이지입니다.</description>
+<pubDate>Mon, 20 Apr 2026 00:00:00 +0900</pubDate>
+<guid isPermaLink="true">https://volik-automotive.com/</guid>
+</item>
+<item>
+<title>볼릭 PPF 기술 및 제품 안내</title>
+<link>https://volik-automotive.com/products</link>
+<description>전 세계에서 인정받은 볼릭의 첨단 보호 필름 기술력을 확인해보세요.</description>
+<pubDate>Mon, 20 Apr 2026 00:00:00 +0900</pubDate>
+<guid isPermaLink="true">https://volik-automotive.com/products</guid>
+</item>
+</channel>
 </rss>

@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://volikautomotive.com/sitemap.xml
-RSS: https://volikautomotive.com/rss.xml
+Sitemap: https://volik-automotive.com/sitemap.xml
