@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Mail, Send, Instagram, Facebook, Youtube, Linkedin, Twitter } from 'lucide-react';
+import { Send } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -28,33 +28,6 @@ export default function Contact() {
                 </p>
                 
                 <div className="space-y-8 mt-12">
-                  <div className="flex items-center space-x-6">
-                    <a href="https://www.instagram.com/official.stek/" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-gold transition-colors">
-                      <Instagram size={24} />
-                    </a>
-                    <a href="https://www.facebook.com/official.stek" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-gold transition-colors">
-                      <Facebook size={24} />
-                    </a>
-                    <a href="https://www.youtube.com/@official_stek" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-gold transition-colors">
-                      <Youtube size={24} />
-                    </a>
-                    <a href="https://www.linkedin.com/company/official-stek" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-gold transition-colors">
-                      <Linkedin size={24} />
-                    </a>
-                    <a href="https://www.twitter.com/stekofficial" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-gold transition-colors">
-                      <Twitter size={24} />
-                    </a>
-                  </div>
-                  
-                  <div className="grid grid-cols-1 gap-8 pt-8 border-t border-white/10">
-                    <div className="flex items-start space-x-4">
-                      <div className="p-3 bg-surface rounded-sm text-gold"><Mail size={20} /></div>
-                      <div>
-                        <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 opacity-40">Email</h4>
-                        <p className="text-sm font-medium">info@VOLIK.com</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
 

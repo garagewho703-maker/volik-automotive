@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Youtube, Phone, Mail } from 'lucide-react';
 import Logo from './Logo';
 
 export default function Footer() {
@@ -14,11 +13,6 @@ export default function Footer() {
           <p className="text-sm text-white/50 leading-relaxed max-w-xs">
             Global distributor of premium Paint Protection Films. We supply world-class PPF and automotive care solutions to professionals and enthusiasts worldwide.
           </p>
-          <div className="flex space-x-4">
-            <a href="#" className="p-2 border border-white/10 rounded-full hover:bg-white/10 transition-colors"><Instagram size={18} /></a>
-            <a href="#" className="p-2 border border-white/10 rounded-full hover:bg-white/10 transition-colors"><Facebook size={18} /></a>
-            <a href="#" className="p-2 border border-white/10 rounded-full hover:bg-white/10 transition-colors"><Youtube size={18} /></a>
-          </div>
         </div>
 
         <div>
@@ -28,16 +22,6 @@ export default function Footer() {
             <li><Link to="/technology" className="hover:text-white transition-colors">Technology</Link></li>
             <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
             <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="text-xs uppercase tracking-[0.2em] font-bold mb-8">Contact</h4>
-          <ul className="space-y-4 text-sm text-white/60">
-            <li className="flex items-center space-x-3">
-              <Mail size={18} className="flex-shrink-0" />
-              <span>info@VOLIK.com</span>
-            </li>
           </ul>
         </div>
       </div>
