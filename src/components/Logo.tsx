@@ -7,7 +7,7 @@ interface LogoProps {
 
 export default function Logo({ className = '', iconOnly = false }: LogoProps) {
   return (
-    <div className={`flex items-center space-x-3 group ${className}`}>
+    <div className={`flex items-center space-x-2 md:space-x-3 group ${className}`}>
       <div className="relative flex-shrink-0">
         {/* Mobile Logo */}
         <img 
@@ -29,10 +29,10 @@ export default function Logo({ className = '', iconOnly = false }: LogoProps) {
 
       {!iconOnly && (
         <div className="flex flex-col">
-          <span className="text-xl md:text-2xl font-display font-bold tracking-tighter leading-none text-white group-hover:text-gold transition-colors duration-300">
+          <span className="text-lg md:text-2xl font-display font-bold tracking-tighter leading-none text-white group-hover:text-gold transition-colors duration-300">
             VOLIK
           </span>
-          <span className="text-[8px] md:text-[9px] uppercase tracking-[0.4em] text-gold/60 font-semibold">
+          <span className="text-[9px] md:text-[11px] uppercase tracking-[0.4em] text-gold/60 font-semibold">
             Automotive
           </span>
         </div>
