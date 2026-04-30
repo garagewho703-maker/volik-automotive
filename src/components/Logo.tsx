@@ -12,7 +12,7 @@ export default function Logo({ className = '', iconOnly = false }: LogoProps) {
         <img 
           src="https://lh3.googleusercontent.com/d/15i2CXUw9Ht_1BKPA5VQg7qjOqEjjq068" 
           alt="VOLIK Logo Icon" 
-          className="w-10 h-auto group-hover:scale-110 transition-transform duration-500"
+          className="w-8 md:w-10 h-auto group-hover:scale-110 transition-transform duration-500"
           referrerPolicy="no-referrer"
         />
         {/* Glow Effect */}
@@ -21,10 +21,10 @@ export default function Logo({ className = '', iconOnly = false }: LogoProps) {
 
       {!iconOnly && (
         <div className="flex flex-col">
-          <span className="text-2xl font-display font-bold tracking-tighter leading-none text-white group-hover:text-gold transition-colors duration-300">
+          <span className="text-xl md:text-2xl font-display font-bold tracking-tighter leading-none text-white group-hover:text-gold transition-colors duration-300">
             VOLIK
           </span>
-          <span className="text-[9px] uppercase tracking-[0.4em] text-gold/60 font-semibold">
+          <span className="text-[8px] md:text-[9px] uppercase tracking-[0.4em] text-gold/60 font-semibold">
             Automotive
           </span>
         </div>

@@ -20,6 +20,24 @@ service cloud.firestore {
         && data.status in ['Active', 'Expired', 'Void'];
     }
 
+    function isValidInquiry(data) {
+      return data.keys().hasAll(['firstName', 'lastName', 'email', 'message', 'createdAt'])
+        && data.keys().size() <= 10
+        && data.firstName is string && data.firstName.size() <= 100
+        && data.lastName is string && data.lastName.size() <= 100
+        && data.email is string && data.email.size() <= 100
+        && data.message is string && data.message.size() <= 1000;
+    }
+
+    function isValidInquiry(data) {
+      return data.keys().hasAll(['firstName', 'lastName', 'email', 'message', 'createdAt'])
+        && data.keys().size() <= 10
+        && data.firstName is string && data.firstName.size() <= 100
+        && data.lastName is string && data.lastName.size() <= 100
+        && data.email is string && data.email.size() <= 100
+        && data.message is string && data.message.size() <= 1000;
+    }
+
     match /warranties/{warrantyId} {
       // 3. Path Variable Hardening
       // 8. Secure List Queries: allow get but not list
@@ -28,6 +46,11 @@ service cloud.firestore {
 
       // Writes are restricted (could be admin in future)
       allow create, update, delete: if false;
+    }
+
+    match /inquiries/{inquiryId} {
+      allow create: if isValidId(inquiryId) && isValidInquiry(request.resource.data);
+      allow read, update, delete: if false;
     }
   }
 }
