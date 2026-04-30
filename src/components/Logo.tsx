@@ -9,10 +9,18 @@ export default function Logo({ className = '', iconOnly = false }: LogoProps) {
   return (
     <div className={`flex items-center space-x-3 group ${className}`}>
       <div className="relative flex-shrink-0">
+        {/* Mobile Logo */}
+        <img 
+          src="https://lh3.googleusercontent.com/d/14TlPMx2O4LhYIWLI_c_RWwxJci4pxnDX" 
+          alt="VOLIK Mobile Logo" 
+          className="w-8 h-auto md:hidden group-hover:scale-110 transition-transform duration-500"
+          referrerPolicy="no-referrer"
+        />
+        {/* Desktop Logo */}
         <img 
           src="https://lh3.googleusercontent.com/d/15i2CXUw9Ht_1BKPA5VQg7qjOqEjjq068" 
-          alt="VOLIK Logo Icon" 
-          className="w-8 md:w-10 h-auto group-hover:scale-110 transition-transform duration-500"
+          alt="VOLIK Desktop Logo" 
+          className="hidden md:block w-10 h-auto group-hover:scale-110 transition-transform duration-500"
           referrerPolicy="no-referrer"
         />
         {/* Glow Effect */}
