@@ -11,9 +11,9 @@ export default function Logo({ className = '', iconOnly = false }: LogoProps) {
       <div className="relative flex-shrink-0">
         {/* Mobile Logo */}
         <img 
-          src="https://lh3.googleusercontent.com/d/14TlPMx2O4LhYIWLI_c_RWwxJci4pxnDX" 
+          src="https://lh3.googleusercontent.com/d/15i2CXUw9Ht_1BKPA5VQg7qjOqEjjq068" 
           alt="VOLIK Mobile Logo" 
-          className="w-8 h-auto md:hidden group-hover:scale-110 transition-transform duration-500"
+          className="w-9 h-auto md:hidden group-hover:scale-110 transition-transform duration-500"
           referrerPolicy="no-referrer"
         />
         {/* Desktop Logo */}
@@ -29,10 +29,10 @@ export default function Logo({ className = '', iconOnly = false }: LogoProps) {
 
       {!iconOnly && (
         <div className="flex flex-col">
-          <span className="text-lg md:text-2xl font-display font-bold tracking-tighter leading-none text-white group-hover:text-gold transition-colors duration-300">
+          <span className="text-xl md:text-2xl font-display font-bold tracking-tighter leading-none text-white group-hover:text-gold transition-colors duration-300">
             VOLIK
           </span>
-          <span className="text-[9px] md:text-[11px] uppercase tracking-[0.4em] text-gold/60 font-semibold">
+          <span className="text-[10px] md:text-[11px] uppercase tracking-[0.4em] text-gold/60 font-semibold">
             Automotive
           </span>
         </div>
